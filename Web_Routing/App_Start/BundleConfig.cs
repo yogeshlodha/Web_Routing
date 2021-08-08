@@ -8,6 +8,10 @@ namespace Web_Routing
         // For more information on bundling, visit https://go.microsoft.com/fwlink/?LinkId=301862
         public static void RegisterBundles(BundleCollection bundles)
         {
+            bundles.Add(new ScriptBundle("~/bundles/js/Master").Include("~/Content/Js/MyWebSite.min.js"));
+
+            bundles.Add(new StyleBundle("~/bundles/css/Master").Include("~/Content/Css/MyWebSite.min.css"));
+
             bundles.Add(new ScriptBundle("~/bundles/jquery").Include(
                         "~/Scripts/jquery-{version}.js"));
 
